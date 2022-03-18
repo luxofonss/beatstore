@@ -1,0 +1,19 @@
+:root {
+    --white-color: #FFFFFF;
+    --pupple: #B75CFF;
+    --dark-white: #808080;
+}
+
+* {
+    box-sizing: inherit;   
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 3rem;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-image: linear-gradient(135deg, #3f4599 0%, #764ba2 100%);;
+}
+

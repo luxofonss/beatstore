@@ -1,0 +1,484 @@
+.artist {
+    position: relative;
+    display: flex;
+    margin: 50px 0;
+    background-color: #092547;
+    border-radius: 20px;
+    border: 10px solid #163861;
+    /* height: 753.58px; */
+}
+
+.artist__info {
+    color: #cccccc;
+    width: 100%;
+}
+
+.artist-avatar {
+    width: 200px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+
+.artist-avatar-img {
+    max-width: 50%;
+    margin: auto;
+    border-radius: 50%;
+    border: 1px solid rgba(118, 210, 226,0.6);
+    cursor: pointer;
+}
+
+.artist-name {
+    color: #ebebeb;
+    text-align: center;
+    margin: 10px 0 3px 0 ;
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+.artist-adress {
+    color: #c9c9c9;
+    text-align: center;
+    margin: 0 ;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1rem;
+}
+
+.artist-follow-message {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.followed-btn,
+.follow-btn,
+.message-btn  {
+    width: 44%;
+    border-radius: 10px;
+    height: 4rem;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    background-color: #bbd9ff;
+}
+
+.followed {
+    background-color: #539eff;
+}
+
+.followed-btn,
+.follow-btn:hover,
+.message-btn:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.br {
+    background-color: rgb(116, 110, 196);
+    width: 75%;
+    height: 1px;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 1px;
+}
+
+.artist-nav,
+.artist-social {
+    margin-left: 20px;
+    margin-top: 25px;
+    font-size: 1.35rem;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    padding-left: 5px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.item-logo {
+    width: 20px;
+    height: 100%;
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+.no-margin {
+    margin: 0 10px;
+}
+
+.item-logo-top {
+    width: 20px;
+    font-size: 18px ;
+    margin-right: 7px;
+    display: flex;
+    align-items: center;
+}
+
+.artist-social {
+    margin-bottom: 20px;
+}
+
+.active {
+    background-color: #3a608d;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.active-icon {
+    color: #3a608d;
+}
+
+/* MAIN */
+
+.main__header,
+.main__collaborations {
+    margin: 10px 0 10px;
+    color:rgb(231, 231, 231);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    align-items: center;
+}
+
+.next-prev-btn {
+    display: flex;
+}
+
+.prev-item-btn,
+.next-item-btn {
+    font-size: 2.1rem;
+    margin: 0 5px;
+    color: #4e98f3fa;
+    cursor: pointer;
+}
+
+.main__collaborations {
+    margin-top: 20px;
+}
+
+.text-heading {
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+
+.text-link {
+    text-decoration: none;
+    color: rgb(199, 199, 199);
+    cursor: pointer;
+}
+
+.main {
+    margin: 50px 0;
+    padding: 5px;
+    background-color: #092547;
+    border: 10px solid #163861;
+    border-radius: 15px;
+    color: #c9c9c9;
+    /* height: 753.58px; */
+}
+
+.main-search {
+    display: flex;
+    position: relative;
+}
+
+.main-search-input {
+    background-color: #afd5f5;
+    border: none;
+    padding: 10px;
+    padding-right: 40px;
+    height: 30px;
+    border-radius: 10px;
+    width: 360px;
+}
+
+.main-search-logo {
+    position: absolute;
+    top: 0;
+    right: -20px;
+    color: #000102;
+    cursor: pointer;
+}
+
+.main__beats-list,
+.main__songs-list {
+    max-height: 265px;
+    overflow-x:hidden;
+    overflow-y: scroll;
+}
+
+.beat-item {
+    background-color: #31455a;
+    padding: 7px 5px;
+    border-radius: 15px;
+    height: 252px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #5b6d74;
+    border-radius: 20px;
+    border: 3px solid transparent;
+    background-clip: content-box;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #a8bbbf;
+  }
+
+@keyframes slide {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.8;
+    }
+}
+
+.beat-item:hover {
+    transform-style: preserve-3d;
+    transform: scale(1.01);
+    box-shadow: 2px 2px 3px 2px rgba(116, 160, 241, 0.192);
+    transition: all ease-in 0.1s;
+    background-color: #1e4c83;
+    cursor: pointer;
+}
+
+.beat-detail {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+.beat-item-img {
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: center;
+    position: relative;
+}
+
+.play-btn,
+.pause-btn {
+    position: absolute;
+    top: 35%;
+    right: 35%;
+    width: 50px;
+    color: #636363;
+}
+
+.beat-item-img:hover .play-btn{
+    display: block;
+}
+
+.beat-image {
+    max-width: 95%;
+    max-height: 182.39px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    height: 189px;
+    object-fit: cover;
+}
+
+.beat-detail {
+    padding: 0 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 25px;
+}
+
+.beat-price {
+    font-size: 1.6rem;
+    font-weight: 500;
+    max-width: 144px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+}
+
+.beat-download {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #486c75;
+    width: 60px;
+    height: 25px;
+    border-radius: 20px;
+    padding: 0 8px;
+    font-size: 1.2rem;
+}
+
+.download-logo {
+    margin-left: 5px;
+    margin-right: 0;
+}
+
+.beat-tempo {
+    font-size: 1.25rem;
+}
+
+.beat-name {
+    font-size: 1.5rem;
+    color: #fff;
+    max-width: 144px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    height: 25px;
+    padding-left: 5px;
+}
+
+
+.main__playing {
+    position: relative;
+    margin-top: 30px;
+    width: 100%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 53px;
+    background-color: rgba(119, 124, 197, 0.2);
+}
+
+.main__playing-song {
+    display: flex;
+}
+
+.playing-song-detail {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    justify-content: center;
+}
+
+.playing-song-name {
+    font-size: 1.2rem;
+}
+
+.playing-song-name,
+.playing-song-artist {
+    line-height: 15px;
+}
+
+.playing-img {
+    margin-top: 11px;
+    margin-left: 7px;
+    max-width: 40px;
+    border-radius: 10%;
+}
+
+.main__playing-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hiden {
+    display: none;
+}
+
+.playing-btn-play,
+.playing-btn-pause {
+    width: 30px;
+}
+
+.main__header-menu {
+    font-size: 2.5rem;
+    width: 35px;
+    height: 35px;
+    background-color: rgba(71, 76, 121, 0.6);
+    text-align: center;
+    line-height: 35px;
+    border-radius: 20%;
+    padding-top: 2px;
+    display: none;
+    cursor: pointer;
+}
+
+.main__playing-selection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 140px;
+}
+
+.slidecontainer {
+    top: -16px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    width: 100.5%; /* Width of the outside container */
+  }
+
+#myRange {
+    width: 100.5%;
+    background-color: #5b6d74;
+    height: 100%;
+}
+
+.menu-dots {
+    margin: 0;
+    width: 25px;
+}
+
+.buy-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: #4f6685;
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+    line-height: 100%;
+}
+
+.buy-button:hover  {
+    opacity: 0.8;
+}
+  
+.buy-btn-cart {
+    width: 25px;
+    margin: 0 auto;
+}
+
+.buy-text {
+    font-size: 1.3rem;
+    margin: 0 10px 0 0px;
+}
+
+.hidden {
+    display: none;
+}

@@ -1,0 +1,110 @@
+
+/* > PC low resolution */
+@media (min-width: 1024px) and (max-width: 1239px) {
+    .beat-download {
+        display: none;
+    }
+}
+
+/* mobile and tablet */
+
+@media (max-width: 1023px) {
+    .main {
+        margin: 0;
+    }
+    .main__header-menu {
+        display: none;
+    }
+
+    .beat-image {
+        height: 178px;
+    }
+}
+
+/* tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .main-search-input {
+        max-width: 300px;
+    }
+
+    .info-mobile-tablet {
+        display: block;
+        margin-bottom: 30px;
+    }
+}
+
+/* moblie */
+@media (max-width: 739px) {
+    .main {
+        margin: 0;
+    }
+    .main-search-input {
+        max-width: 200px;
+    }
+
+    .main__header-menu {
+        min-width: 35px;
+    }
+
+    .main__playing-song {
+        display: none;
+    }
+
+    .main__playing{
+        display: flex;
+        justify-content: center;
+    }
+
+    .info-mobile-tablet {
+        display: block;
+        margin-bottom: 25px;
+
+    }
+
+    .artist-name {
+        margin-top: 0;    
+    }
+
+    .beat-download {
+        display: none;
+    }
+
+    .beat-item {
+        height: 210px;
+    }
+
+    .beat-image {
+        height: 140px;
+    }
+    
+    .beat-name,
+    .beat-detail {
+        line-height: 2rem;
+    }
+
+    .main-search {
+        display: none;
+    }
+
+    .main-search-logo {
+        color: aliceblue;
+    }
+
+    .text-heading {
+        font-size: 1.6rem;
+        margin-left: -10px;
+    }
+
+    .main__playing-selection {
+        display: none;
+    }
+    
+    .slidecontainer {
+        margin-left: 10px;
+    }        
+    
+    .main__beats-list,
+    .main__songs-list {
+    height: 220px;
+}
+}
